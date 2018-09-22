@@ -7,3 +7,25 @@
 //
 
 import Foundation
+
+class ContactServices {
+    
+    static var instance: ContactServices?
+    
+    static func sharedInstance() -> ContactServices {
+        if instance == nil {
+            instance = ContactServices()
+            return instance!
+        } else {
+            return instance!
+        }
+    }
+    
+    func fetchAllContacts(strEmail: String, strUserId: String, success:(_ responseObject: AnyObject)->Void, failure:(_ failureObject: AnyObject)->Void) {
+        
+        //success(<#T##AnyObject#>)
+        //failure(<#T##AnyObject#>)
+        
+    }
+    
+}

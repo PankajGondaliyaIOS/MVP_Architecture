@@ -9,5 +9,6 @@
 import UIKit
 
 class Contact: NSObject {
-
+    var title: String!
+    var subTitle: String!
 }
